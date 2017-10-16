@@ -1,4 +1,4 @@
-Environment ,Service,OS,SQL,EndpointInfo,URL
+Environment,Service,OS,SQL,EndpointInfo,URL
 DEV,Branch,Windows,MSSQL,Swagger,http://10.4.1.232/kiwiservices/branchservice/swagger/
 DEV,Branch,Linux,MySQL,Swagger,http://10.4.1.233/kiwiservices/branchservice/swagger/
 DEV,Branch,Windows,MSSQL,Info,http://10.4.1.232/kiwiservices/branchservice/info/

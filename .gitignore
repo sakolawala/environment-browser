@@ -289,3 +289,9 @@ __pycache__/
 
 # Download folder
 download
+
+# VS Code folder
+.vscode
+
+# LibreOffice Lock file
+/www/js/data/.~lock.Data.csv#

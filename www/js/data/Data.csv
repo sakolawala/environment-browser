@@ -1,0 +1,24 @@
+Environment ,Service,OS,SQL,EndpointInfo,URL
+DEV,Branch,Windows,MSSQL,Swagger,http://10.4.1.232/kiwiservices/branchservice/swagger/
+DEV,Branch,Linux,MySQL,Swagger,http://10.4.1.233/kiwiservices/branchservice/swagger/
+DEV,Branch,Windows,MSSQL,Info,http://10.4.1.232/kiwiservices/branchservice/info/
+DEV,Branch,Linux,MySQL,Info,http://10.4.1.233/kiwiservices/branchservice/info/
+DEV,Branch,Windows,MSSQL,Branch,http://10.4.1.232/kiwiservices/branchservice/v1/branches/pu
+DEV,Branch,Linux,MySQL,Branch,http://10.4.1.233/kiwiservices/branchservice/v1/branches/pu
+DEV,BranchSetting,Windows,MSSQL,Swagger,http://10.4.1.232/kiwiservices/branchsettingservice/swagger/
+DEV,BranchSetting,Linux,MySQL,Swagger,http://10.4.1.233/kiwiservices/branchsettingservice/swagger/
+DEV,BranchSetting,Windows,MSSQL,Info,http://10.4.1.232/kiwiservices/branchsettingservice/info/
+DEV,BranchSetting,Linux,MySQL,Info,http://10.4.1.233/kiwiservices/branchsettingservice/info/
+DEV,BranchSetting,Windows,MSSQL,Setting,http://10.4.1.232/kiwiservices/branchsettingservice/v1/BranchSettings?branchKey=pu
+DEV,BranchSetting,Linux,MySQL,Setting,http://10.4.1.233/kiwiservices/branchsettingservice/v1/BranchSettings?branchKey=pu
+DEV,BranchPrinter,Windows,MSSQL,Swagger,http://10.4.1.232/kiwiservices/branchprinterservice/swagger/
+DEV,BranchPrinter,Linux,MySQL,Swagger,http://10.4.1.233/kiwiservices/branchprinterservice/swagger/
+DEV,BranchPrinter,Windows,MSSQL,Info,http://10.4.1.232/kiwiservices/branchprinterservice/info/
+DEV,BranchPrinter,Linux,MySQL,Info,http://10.4.1.233/kiwiservices/branchprinterservice/info/
+DEV,BranchPrinter,Windows,MSSQL,Setting,http://10.4.1.232/kiwiservices/branchprinterservice/v1/BranchPrinters?branchKey=pu
+DEV,BranchPrinter,Linux,MySQL,Setting,http://10.4.1.233/kiwiservices/branchprinterservice/v1/BranchPrinters?branchKey=pu
+DEV,Oauth,Windows,MSSQL,WellKnown,http://10.4.1.232/kiwiservices/oauthservice/.well-known/openid-configuration
+DEV,Oauth,Windows,MSSQL,WellKnown,http://10.4.1.233/kiwiservices/oauthservice/.well-known/openid-configuration
+UAT,Branch,Windows,MSSQL,Swagger,http://10.203.1.224/kiwiservices/branchservice/swagger/
+UAT,Branch,Windows,MySQL,Swagger,http://10.204.2.13/kiwiservices/branchservice/swagger/
+UAT,Branch,Linux,MSSQL,Swagger,http://10.204.2.29/kiwiservices/branchservice/swagger/

@@ -1,0 +1,286 @@
+.btn-UAT { 
+    color: #000000; 
+    background-color: #FFF200; 
+    border-color: #130269; 
+  } 
+   
+  .btn-UAT:hover, 
+  .btn-UAT:focus, 
+  .btn-UAT:active, 
+  .btn-UAT.active, 
+  .open .dropdown-toggle.btn-UAT { 
+    color: #000000; 
+    background-color: #49247A; 
+    border-color: #130269; 
+  } 
+   
+  .btn-UAT:active, 
+  .btn-UAT.active, 
+  .open .dropdown-toggle.btn-UAT { 
+    background-image: none; 
+  } 
+   
+  .btn-UAT.disabled, 
+  .btn-UAT[disabled], 
+  fieldset[disabled] .btn-UAT, 
+  .btn-UAT.disabled:hover, 
+  .btn-UAT[disabled]:hover, 
+  fieldset[disabled] .btn-UAT:hover, 
+  .btn-UAT.disabled:focus, 
+  .btn-UAT[disabled]:focus, 
+  fieldset[disabled] .btn-UAT:focus, 
+  .btn-UAT.disabled:active, 
+  .btn-UAT[disabled]:active, 
+  fieldset[disabled] .btn-UAT:active, 
+  .btn-UAT.disabled.active, 
+  .btn-UAT[disabled].active, 
+  fieldset[disabled] .btn-UAT.active { 
+    background-color: #FFF200; 
+    border-color: #130269; 
+  } 
+   
+  .btn-UAT .badge { 
+    color: #FFF200; 
+    background-color: #000000; 
+  }
+
+ /* --------------------------------------------------------------------- */
+  .btn-DEV { 
+    color: #ffffff; 
+    background-color: #1B28BD; 
+    border-color: #020269; 
+  } 
+   
+  .btn-DEV:hover, 
+  .btn-DEV:focus, 
+  .btn-DEV:active, 
+  .btn-DEV.active, 
+  .open .dropdown-toggle.btn-DEV { 
+    color: #ffffff; 
+    background-color: #24247A; 
+    border-color: #020269; 
+  } 
+   
+  .btn-DEV:active, 
+  .btn-DEV.active, 
+  .open .dropdown-toggle.btn-DEV { 
+    background-image: none; 
+  } 
+   
+  .btn-DEV.disabled, 
+  .btn-DEV[disabled], 
+  fieldset[disabled] .btn-DEV, 
+  .btn-DEV.disabled:hover, 
+  .btn-DEV[disabled]:hover, 
+  fieldset[disabled] .btn-DEV:hover, 
+  .btn-DEV.disabled:focus, 
+  .btn-DEV[disabled]:focus, 
+  fieldset[disabled] .btn-DEV:focus, 
+  .btn-DEV.disabled:active, 
+  .btn-DEV[disabled]:active, 
+  fieldset[disabled] .btn-DEV:active, 
+  .btn-DEV.disabled.active, 
+  .btn-DEV[disabled].active, 
+  fieldset[disabled] .btn-DEV.active { 
+    background-color: #1B28BD; 
+    border-color: #020269; 
+  } 
+   
+  .btn-DEV .badge { 
+    color: #1B28BD; 
+    background-color: #ffffff; 
+  }
+
+
+ /* --------------------------------------------------------------------- */
+  .btn-windows { 
+    color: #FFFFFF; 
+    background-color: #E38D13; 
+    border-color: #E38D13; 
+  } 
+   
+  .btn-windows:hover, 
+  .btn-windows:focus, 
+  .btn-windows:active, 
+  .btn-windows.active, 
+  .open .dropdown-toggle.btn-windows { 
+    color: #FFFFFF; 
+    background-color: #FF9500; 
+    border-color: #E38D13; 
+  } 
+   
+  .btn-windows:active, 
+  .btn-windows.active, 
+  .open .dropdown-toggle.btn-windows { 
+    background-image: none; 
+  } 
+   
+  .btn-windows.disabled, 
+  .btn-windows[disabled], 
+  fieldset[disabled] .btn-windows, 
+  .btn-windows.disabled:hover, 
+  .btn-windows[disabled]:hover, 
+  fieldset[disabled] .btn-windows:hover, 
+  .btn-windows.disabled:focus, 
+  .btn-windows[disabled]:focus, 
+  fieldset[disabled] .btn-windows:focus, 
+  .btn-windows.disabled:active, 
+  .btn-windows[disabled]:active, 
+  fieldset[disabled] .btn-windows:active, 
+  .btn-windows.disabled.active, 
+  .btn-windows[disabled].active, 
+  fieldset[disabled] .btn-windows.active { 
+    background-color: #E38D13; 
+    border-color: #E38D13; 
+  } 
+   
+  .btn-windows .badge { 
+    color: #E38D13; 
+    background-color: #FFFFFF; 
+  }
+
+
+
+
+
+ /* --------------------------------------------------------------------- */
+  .btn-linux { 
+    color: #FFFFFF; 
+    background-color: #66E313; 
+    border-color: #66E313; 
+  } 
+   
+  .btn-linux:hover, 
+  .btn-linux:focus, 
+  .btn-linux:active, 
+  .btn-linux.active, 
+  .open .dropdown-toggle.btn-linux { 
+    color: #FFFFFF; 
+    background-color: #66FF00; 
+    border-color: #66E313; 
+  } 
+   
+  .btn-linux:active, 
+  .btn-linux.active, 
+  .open .dropdown-toggle.btn-linux { 
+    background-image: none; 
+  } 
+   
+  .btn-linux.disabled, 
+  .btn-linux[disabled], 
+  fieldset[disabled] .btn-linux, 
+  .btn-linux.disabled:hover, 
+  .btn-linux[disabled]:hover, 
+  fieldset[disabled] .btn-linux:hover, 
+  .btn-linux.disabled:focus, 
+  .btn-linux[disabled]:focus, 
+  fieldset[disabled] .btn-linux:focus, 
+  .btn-linux.disabled:active, 
+  .btn-linux[disabled]:active, 
+  fieldset[disabled] .btn-linux:active, 
+  .btn-linux.disabled.active, 
+  .btn-linux[disabled].active, 
+  fieldset[disabled] .btn-linux.active { 
+    background-color: #66E313; 
+    border-color: #66E313; 
+  } 
+   
+  .btn-linux .badge { 
+    color: #66E313; 
+    background-color: #FFFFFF; 
+  }
+
+
+   /* --------------------------------------------------------------------- */
+   .btn-mssql { 
+    color: #FFFFFF; 
+    background-color: #5BC0DE; 
+    border-color: #5BC0DE; 
+  } 
+   
+  .btn-mssql:hover, 
+  .btn-mssql:focus, 
+  .btn-mssql:active, 
+  .btn-mssql.active, 
+  .open .dropdown-toggle.btn-mssql { 
+    color: #FFFFFF; 
+    background-color: #35CEFC; 
+    border-color: #5BC0DE; 
+  } 
+   
+  .btn-mssql:active, 
+  .btn-mssql.active, 
+  .open .dropdown-toggle.btn-mssql { 
+    background-image: none; 
+  } 
+   
+  .btn-mssql.disabled, 
+  .btn-mssql[disabled], 
+  fieldset[disabled] .btn-mssql, 
+  .btn-mssql.disabled:hover, 
+  .btn-mssql[disabled]:hover, 
+  fieldset[disabled] .btn-mssql:hover, 
+  .btn-mssql.disabled:focus, 
+  .btn-mssql[disabled]:focus, 
+  fieldset[disabled] .btn-mssql:focus, 
+  .btn-mssql.disabled:active, 
+  .btn-mssql[disabled]:active, 
+  fieldset[disabled] .btn-mssql:active, 
+  .btn-mssql.disabled.active, 
+  .btn-mssql[disabled].active, 
+  fieldset[disabled] .btn-mssql.active { 
+    background-color: #5BC0DE; 
+    border-color: #5BC0DE; 
+  } 
+   
+  .btn-mssql .badge { 
+    color: #5BC0DE; 
+    background-color: #FFFFFF; 
+  }
+
+ /* --------------------------------------------------------------------- */
+  .btn-mysql { 
+    color: #FFFFFF; 
+    background-color: #5B6DDE; 
+    border-color: #5B6DDE; 
+  } 
+   
+  .btn-mysql:hover, 
+  .btn-mysql:focus, 
+  .btn-mysql:active, 
+  .btn-mysql.active, 
+  .open .dropdown-toggle.btn-mysql { 
+    color: #FFFFFF; 
+    background-color: #2642FC; 
+    border-color: #5B6DDE; 
+  } 
+   
+  .btn-mysql:active, 
+  .btn-mysql.active, 
+  .open .dropdown-toggle.btn-mysql { 
+    background-image: none; 
+  } 
+   
+  .btn-mysql.disabled, 
+  .btn-mysql[disabled], 
+  fieldset[disabled] .btn-mysql, 
+  .btn-mysql.disabled:hover, 
+  .btn-mysql[disabled]:hover, 
+  fieldset[disabled] .btn-mysql:hover, 
+  .btn-mysql.disabled:focus, 
+  .btn-mysql[disabled]:focus, 
+  fieldset[disabled] .btn-mysql:focus, 
+  .btn-mysql.disabled:active, 
+  .btn-mysql[disabled]:active, 
+  fieldset[disabled] .btn-mysql:active, 
+  .btn-mysql.disabled.active, 
+  .btn-mysql[disabled].active, 
+  fieldset[disabled] .btn-mysql.active { 
+    background-color: #5B6DDE; 
+    border-color: #5B6DDE; 
+  } 
+   
+  .btn-mysql .badge { 
+    color: #5B6DDE; 
+    background-color: #FFFFFF; 
+  }

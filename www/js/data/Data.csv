@@ -43,9 +43,9 @@ UAT,BranchPrinter,Linux,MSSQL,Swagger,http://10.204.2.29/kiwiservices/branchprin
 UAT,BranchPrinter,Windows,MSSQL,Info,http://10.203.1.224/kiwiservices/branchprinterservice/info/
 UAT,BranchPrinter,Windows,MySQL,Info,http://10.204.2.13/kiwiservices/branchprinterservice/info/
 UAT,BranchPrinter,Linux,MSSQL,Info,http://10.204.2.29/kiwiservices/branchprinterservice/info/
-UAT,BranchPrinter,Windows,MSSQL,Info,http://10.203.1.224/kiwiservices/branchprinterservice/v1/BranchPrinters?branchKey=wz
-UAT,BranchPrinter,Windows,MySQL,Info,http://10.203.1.13/kiwiservices/branchprinterservice/v1/BranchPrinters?branchKey=wz
-UAT,BranchPrinter,Linux,MSSQL,Info,http://10.204.2.29/kiwiservices/branchprinterservice/v1/BranchPrinters?branchKey=wz
+UAT,BranchPrinter,Windows,MSSQL,Printer,http://10.203.1.224/kiwiservices/branchprinterservice/v1/BranchPrinters?branchKey=wz
+UAT,BranchPrinter,Windows,MySQL,Printer,http://10.203.1.13/kiwiservices/branchprinterservice/v1/BranchPrinters?branchKey=wz
+UAT,BranchPrinter,Linux,MSSQL,Printer,http://10.204.2.29/kiwiservices/branchprinterservice/v1/BranchPrinters?branchKey=wz
 UAT,Oauth,Windows,MSSQL,WellKnown,http://10.4.1.224/kiwiservices/oauthservice/.well-known/openid-configuration
 UAT,Oauth,Windows,MySQL,WellKnown,http://10.4.2.13/kiwiservices/oauthservice/.well-known/openid-configuration
 UAT,Oauth,Linux,MySQL,WellKnown,http://10.4.2.29/kiwiservices/oauthservice/.well-known/openid-configuration

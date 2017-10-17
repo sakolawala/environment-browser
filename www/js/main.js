@@ -38,10 +38,10 @@ function configureSearch(list) {
 		minMatchCharLength: 1,
 		keys: [
 		  'Environment',
+		  'EndpointInfo',
+		  'Service',		  
 		  'OS',
-		  'SQL',
-		  'Service',
-		  'EndpointInfo'
+		  'SQL'		  		
 	  ]
 	  };
 	  fuse = new Fuse(list, options); // "list" is the item array	  

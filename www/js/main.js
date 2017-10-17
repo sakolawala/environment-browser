@@ -31,18 +31,18 @@ function configureSearch(list) {
 
 	var options = {
 		shouldSort: true,
-		threshold: 0.6,
+		threshold: 0.5,
 		location: 0,
-		distance: 100,
+		distance: 0,
 		maxPatternLength: 32,
-		minMatchCharLength: 1,
+		minMatchCharLength: 3,
 		keys: [
 		  'Environment',
 		  'EndpointInfo',
 		  'Service',		  
 		  'OS',
 		  'SQL'		  		
-	  ]
+		]
 	  };
 	  fuse = new Fuse(list, options); // "list" is the item array	  
 }

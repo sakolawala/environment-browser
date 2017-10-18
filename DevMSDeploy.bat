@@ -1,0 +1,1 @@
+"C:\Program Files\IIS\Microsoft Web Deploy V3\msdeploy.exe" -verb:sync -source:iisApp="F:\Shabs\prj\rnd\environment-browser\www" -dest:iisApp="Default Web Site/kiwiservices/www",computername=10.4.1.232,username=Test,password=C3x@12345,storeCredentials=DevKiwiWindows

@@ -1,5 +1,5 @@
 var csvEnvData = [];
-var fuse;
+var idx;
 var maxResult = 50;
 
 $(document).ready(function() {
@@ -9,8 +9,8 @@ $(document).ready(function() {
 	$("#searchBox").on("keyup", function (e) {
 		if (e.keyCode == 13) {
 			var searchtext = $("#searchBox").val();
-			var results = fuse.search(searchtext);
-			showResult(results);
+			var results = idx.search(searchtext);
+			showLunrSearchResult(results);
 		}	
 	});
 });
@@ -21,6 +21,11 @@ function LoadCSVData() {
 		header: true,
 		complete: function(results) {
 			csvEnvData = results.data;
+			var i = 0; 
+			csvEnvData.forEach(function (item) {				
+				item.id = i;
+				i++;
+			});
 			configureSearch(csvEnvData);
 			showResult(csvEnvData);
 		}
@@ -29,22 +34,18 @@ function LoadCSVData() {
 
 function configureSearch(list) {
 
-	var options = {
-		shouldSort: true,
-		threshold: 0.5,
-		location: 0,
-		distance: 0,
-		maxPatternLength: 32,
-		minMatchCharLength: 3,
-		keys: [
-		  'Environment',
-		  'EndpointInfo',
-		  'Service',		  
-		  'OS',
-		  'SQL'		  		
-		]
-	  };
-	  fuse = new Fuse(list, options); // "list" is the item array	  
+	idx = lunr(function() {
+		this.ref('id')
+		this.field('Environment')
+		this.field('EndpointInfo')
+		this.field('Service')
+		this.field('OS')
+		this.field('SQL')	
+
+		list.forEach(function (doc) {
+			this.add(doc)
+		}, this);
+	});
 }
 
 function translateToViewModel(csvEnvData) {
@@ -91,3 +92,12 @@ function showResult(csvEnvData) {
 	$("#searchResults").html(strhtml);
 }
 
+function showLunrSearchResult(results) {
+	searchResults = [];
+
+	results.forEach(function (searchresultitem) {	
+		item = csvEnvData[searchresultitem.ref];
+		searchResults.push(item)
+	});
+	showResult(searchResults);
+}

@@ -9,8 +9,14 @@ $(document).ready(function() {
 	$("#searchBox").on("keyup", function (e) {
 		if (e.keyCode == 13) {
 			var searchtext = $("#searchBox").val();
-			var results = idx.search(searchtext);
-			showLunrSearchResult(results);
+			if (searchtext == "") {
+				//Load all the URLs
+				showResult(csvEnvData);
+			}
+			else {
+				var results = idx.search(searchtext);
+				showLunrSearchResult(results);	
+			}			
 		}	
 	});
 });

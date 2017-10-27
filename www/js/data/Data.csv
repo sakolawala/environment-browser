@@ -15,8 +15,8 @@ DEV,BranchPrinter,Windows,MSSQL,Swagger,http://10.4.1.232/kiwiservices/branchpri
 DEV,BranchPrinter,Linux,MySQL,Swagger,http://10.4.1.233/kiwiservices/branchprinterservice/swagger/
 DEV,BranchPrinter,Windows,MSSQL,Info,http://10.4.1.232/kiwiservices/branchprinterservice/v1/info/
 DEV,BranchPrinter,Linux,MySQL,Info,http://10.4.1.233/kiwiservices/branchprinterservice/v1/info/
-DEV,BranchPrinter,Windows,MSSQL,Setting,http://10.4.1.232/kiwiservices/branchprinterservice/v1/BranchPrinters?branchKey=pu
-DEV,BranchPrinter,Linux,MySQL,Setting,http://10.4.1.233/kiwiservices/branchprinterservice/v1/BranchPrinters?branchKey=pu
+DEV,BranchPrinter,Windows,MSSQL,Printer,http://10.4.1.232/kiwiservices/branchprinterservice/v1/BranchPrinters?branchKey=pu
+DEV,BranchPrinter,Linux,MySQL,Printer,http://10.4.1.233/kiwiservices/branchprinterservice/v1/BranchPrinters?branchKey=pu
 DEV,Oauth,Windows,MSSQL,WellKnown,http://10.4.1.232/kiwiservices/oauthservice/.well-known/openid-configuration
 DEV,Oauth,Linux,MySQL,WellKnown,http://10.4.1.233/kiwiservices/oauthservice/.well-known/openid-configuration
 UAT,Branch,Windows,MSSQL,Swagger,http://10.203.1.224/kiwiservices/branchservice/swagger/

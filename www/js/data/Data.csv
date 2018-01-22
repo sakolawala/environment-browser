@@ -90,3 +90,8 @@ UAT,Category,Linux,MSSQL,Swagger,http://10.204.2.29/kiwiservices/categoryservice
 UAT,Order,Windows,MSSQL,Swagger,http://10.204.2.221/kiwiservices/orderservice/swagger/
 UAT,Order,Windows,MySQL,Swagger,http://10.204.2.13/kiwiservices/orderservice/swagger/
 UAT,Order,Linux,MSSQL,Swagger,http://10.204.2.29/kiwiservices/orderservice/swagger/
+DEV,Customer,Windows,MSSQL,Swagger,http://10.4.1.232/kiwiservices/customerservice/swagger/
+DEV,Customer,Linux,MYSQL,Swagger,http://10.4.1.233/kiwiservices/customerservice/swagger/
+UAT,Customer,Windows,MSSQL,Swagger,http://10.204.2.221/kiwiservices/customerservice/swagger/
+UAT,Customer,Windows,MySQL,Swagger,http://10.204.2.13/kiwiservices/customerservice/swagger/
+UAT,Customer,Linux,MSSQL,Swagger,http://10.204.2.29/kiwiservices/customerservice/swagger/

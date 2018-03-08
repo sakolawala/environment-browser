@@ -3,8 +3,10 @@ var idx;
 var maxResult = 50;
 
 $(document).ready(function() {
-	templateLoader.LoadTemplate();
-	LoadCSVData();
+	//templateLoader.LoadTemplate();
+	//LoadCSVData();
+	
+	extractTransformLoader.ProcessData();
 
 	$("#searchBox").on("keyup", function (e) {
 		if (e.keyCode == 13) {

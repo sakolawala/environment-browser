@@ -2,3 +2,14 @@ Name,WebSlag,ServiceType
 Branch,branchservice,StoreAndNational
 BranchSetting,branchsettingservice,StoreAndNational
 BranchPrinter,branchprinterservice,StoreAndNational
+Attribute,attributeservice,National
+Audittrails,audittrailservice,StoreAndNational
+Boxes,boxservice,Store
+Categories,categoryservice,StoreAndNational
+Clauselines ,clauselineservice,Store
+Customers ,customerservice,StoreAndNational
+Documents ,documentservice,Store
+Modules,moduleservice,Store
+Orders,orderservice,StoreAndNational
+Stock,stockservice,Store
+Vouchers,voucherservice,StoreAndNational

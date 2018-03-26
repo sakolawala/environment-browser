@@ -1,6 +1,8 @@
-Environment,OS,SQL,BaseURL
-DEV,Windows,MSSQL,http://10.4.1.232/kiwiservices/
-DEV,Linux,MySQL,http://10.4.1.233/kiwiservices/
-UAT,Windows,MSSQL,http://10.204.2.221/kiwiservices/
-UAT,Windows,MySQL,http://10.204.2.13/kiwiservices/
-UAT,Linux,MSSQL,http://10.204.2.29/kiwiservices/
+Environment,OS,SQL,ServerType,BaseURL
+DEV,Windows,MSSQL,Store,http://10.4.1.232/kiwiservices/
+DEV,Linux,MySQL,Store,http://10.4.1.233/kiwiservices/
+UAT,Windows,MSSQL,Store,http://10.204.2.221/kiwiservices/
+UAT,Windows,MySQL,Store,http://10.204.2.13/kiwiservices/
+UAT,Linux,MSSQL,Store,http://10.204.2.29/kiwiservices/
+DEV,Windows,MSSQL,National,http://10.204.1.21/kiwiservices/
+UAT,Windows,MSSQL,National,http://10.204.2.222/kiwiservices/

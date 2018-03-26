@@ -1,19 +1,30 @@
-var csvEnvData = [];
+var WholeData = [];
 var idx;
 var maxResult = 50;
 
 $(document).ready(function() {
-	//templateLoader.LoadTemplate();
-	//LoadCSVData();
-	
-	extractTransformLoader.ProcessData();
+  templateLoader.LoadTemplate
+      .then(function() {
+        return extractTransformLoader.ProcessData
+      })
+      .then(function(pdata) {
+        console.log("Configuring search and result..");
+        WholeData = pdata;
+        configureSearch(pdata);
+        showResult(pdata);
+        console.log("Configuring search and result completed");
+      })
+      .catch(function(err) { 
+        console.log("Failed main method")
+        console.log(err)
+      });
 
 	$("#searchBox").on("keyup", function (e) {
 		if (e.keyCode == 13) {
 			var searchtext = $("#searchBox").val();
 			if (searchtext == "") {
 				//Load all the URLs
-				showResult(csvEnvData);
+				showResult(pdata);
 			}
 			else {
 				var results = idx.search(searchtext);
@@ -23,23 +34,6 @@ $(document).ready(function() {
 	});
 });
 
-function LoadCSVData() {
-	Papa.parse("./js/data/Data.csv", {
-		download : true,
-		header: true,
-		complete: function(results) {
-			csvEnvData = results.data;
-			var i = 0; 
-			csvEnvData.forEach(function (item) {				
-				item.id = i;
-				i++;
-			});
-			configureSearch(csvEnvData);
-			showResult(csvEnvData);
-		}
-	});
-};
-
 function configureSearch(list) {
 
 	idx = lunr(function() {
@@ -48,7 +42,8 @@ function configureSearch(list) {
 		this.field('EndpointInfo')
 		this.field('Service')
 		this.field('OS')
-		this.field('SQL')	
+    this.field('SQL')	
+    this.field('ServerType')	
 
 		list.forEach(function (doc) {
 			this.add(doc)
@@ -56,10 +51,10 @@ function configureSearch(list) {
 	});
 }
 
-function translateToViewModel(csvEnvData) {
+function translateToViewModel(pdata) {
 	var envVMData = [];
 	var i = 0;
-	csvEnvData.forEach(function(item) {
+	pdata.forEach(function(item) {
 		if (item.Environment && i < maxResult) {
 			var envVMItem = {};
 			envVMItem.Environment = item.Environment;
@@ -67,7 +62,9 @@ function translateToViewModel(csvEnvData) {
 			envVMItem.OS = item.OS;
 			envVMItem.SQL = item.SQL;
 			envVMItem.EndpointInfo = item.EndpointInfo;
-			envVMItem.URL = item.URL;
+      envVMItem.URL = item.URL;
+      envVMItem.ServerType = item.ServerType;
+      
 			if  (envVMItem.Environment == "DEV")
 				envVMItem.EnvCSSClass = "btn-DEV";
 			else if (envVMItem.Environment == "UAT")
@@ -81,7 +78,12 @@ function translateToViewModel(csvEnvData) {
 			if (envVMItem.SQL == "MSSQL")
 				envVMItem.SQLCSSClass = "btn-mssql";
 			else if (envVMItem.SQL == "MySQL")
-				envVMItem.SQLCSSClass = "btn-mysql";
+        envVMItem.SQLCSSClass = "btn-mysql";
+        
+      if (envVMItem.ServerType == "Store")
+				envVMItem.SRVTYPEClass = "btn-store";
+			else if (envVMItem.ServerType == "National")
+				envVMItem.SRVTYPEClass = "btn-national";
 			
 			envVMData.push(envVMItem)
 			i++;
@@ -90,8 +92,8 @@ function translateToViewModel(csvEnvData) {
 	return envVMData
 }
 
-function showResult(csvEnvData) {
-	var ViewModel = translateToViewModel(csvEnvData);
+function showResult(pdata) {
+	var ViewModel = translateToViewModel(pdata);
 	if (ViewModel.length == maxResult)
 		$("#results").html("Results - More than 50 search result, truncated to show only 50")
 	else if (ViewModel.length < maxResult)
@@ -104,7 +106,7 @@ function showLunrSearchResult(results) {
 	searchResults = [];
 
 	results.forEach(function (searchresultitem) {	
-		item = csvEnvData[searchresultitem.ref];
+		item = WholeData[searchresultitem.ref];
 		searchResults.push(item)
 	});
 	showResult(searchResults);

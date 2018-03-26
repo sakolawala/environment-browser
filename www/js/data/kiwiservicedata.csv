@@ -1,3 +1,4 @@
-Name,WebSlag
-Branch,branchservice
-BranchSetting,branchsettingservice
+Name,WebSlag,ServiceType
+Branch,branchservice,StoreAndNational
+BranchSetting,branchsettingservice,StoreAndNational
+BranchPrinter,branchprinterservice,StoreAndNational

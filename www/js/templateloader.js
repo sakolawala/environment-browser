@@ -2,7 +2,7 @@ var templateLoader = function() {
 
     var itemrowTemplate;
 
-    var loadTemplale = function () {
+    var loadTemplale = new Promise(function (resolve, reject) {
 
         $.ajax({            
             url: "./templates/itemrow.handlebars",
@@ -10,9 +10,13 @@ var templateLoader = function() {
             success: function(data) {
                 source = data;
                 itemrowTemplate = Handlebars.compile(source);
-            }               
+                resolve(itemrowTemplate);
+            },
+            error: function (xhr,status,error) {
+                 reject(error);
+            }
         });
-    }
+    });
 
     var renderTemplate = function (items) {
         if (itemrowTemplate) {

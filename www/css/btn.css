@@ -284,3 +284,95 @@
     color: #5B6DDE; 
     background-color: #FFFFFF; 
   }
+  /* --------------------------------------------------------------------- */
+  .btn-store { 
+    color: #FFFFFF; 
+    background-color: #C98986; 
+    border-color: #C98986; 
+  } 
+   
+  .btn-store:hover, 
+  .btn-store:focus, 
+  .btn-store:active, 
+  .btn-store.active, 
+  .open .dropdown-toggle.btn-store { 
+    color: #FFFFFF; 
+    background-color: #E3655B; 
+    border-color: #C98986; 
+  } 
+   
+  .btn-store:active, 
+  .btn-store.active, 
+  .open .dropdown-toggle.btn-store { 
+    background-image: none; 
+  } 
+   
+  .btn-store.disabled, 
+  .btn-store[disabled], 
+  fieldset[disabled] .btn-store, 
+  .btn-store.disabled:hover, 
+  .btn-store[disabled]:hover, 
+  fieldset[disabled] .btn-store:hover, 
+  .btn-store.disabled:focus, 
+  .btn-store[disabled]:focus, 
+  fieldset[disabled] .btn-store:focus, 
+  .btn-store.disabled:active, 
+  .btn-store[disabled]:active, 
+  fieldset[disabled] .btn-store:active, 
+  .btn-store.disabled.active, 
+  .btn-store[disabled].active, 
+  fieldset[disabled] .btn-store.active { 
+    background-color: #C98986; 
+    border-color: #C98986; 
+  } 
+   
+  .btn-store .badge { 
+    color: #C98986; 
+    background-color: #FFFFFF; 
+  }
+  /* --------------------------------------------------------------------- */
+  .btn-national { 
+    color: #FFFFFF; 
+    background-color: #8B575C; 
+    border-color: #8B575C; 
+  } 
+   
+  .btn-national:hover, 
+  .btn-national:focus, 
+  .btn-national:active, 
+  .btn-national.active, 
+  .open .dropdown-toggle.btn-national { 
+    color: #FFFFFF; 
+    background-color: #F2B9B4; 
+    border-color: #8B575C; 
+  } 
+   
+  .btn-national:active, 
+  .btn-national.active, 
+  .open .dropdown-toggle.btn-national { 
+    background-image: none; 
+  } 
+   
+  .btn-national.disabled, 
+  .btn-national[disabled], 
+  fieldset[disabled] .btn-national, 
+  .btn-national.disabled:hover, 
+  .btn-national[disabled]:hover, 
+  fieldset[disabled] .btn-national:hover, 
+  .btn-national.disabled:focus, 
+  .btn-national[disabled]:focus, 
+  fieldset[disabled] .btn-national:focus, 
+  .btn-national.disabled:active, 
+  .btn-national[disabled]:active, 
+  fieldset[disabled] .btn-national:active, 
+  .btn-national.disabled.active, 
+  .btn-national[disabled].active, 
+  fieldset[disabled] .btn-national.active { 
+    background-color: #8B575C; 
+    border-color: #8B575C; 
+  } 
+   
+  .btn-national .badge { 
+    color: #8B575C; 
+    background-color: #FFFFFF; 
+  }

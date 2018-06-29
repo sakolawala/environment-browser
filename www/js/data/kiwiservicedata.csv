@@ -13,3 +13,7 @@ Modules,moduleservice,Store
 Orders,orderservice,StoreAndNational
 Stock,stockservice,Store
 Vouchers,voucherservice,StoreAndNational
+Printing,printingservice,Store
+StaffUser,staffuserservice,National
+BoxAudit,boxauditservice,National
+TestOrders,testorderservice,Store

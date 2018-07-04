@@ -17,3 +17,4 @@ Printing,printingservice,Store
 StaffUser,staffuserservice,National
 BoxAudit,boxauditservice,National
 TestOrders,testorderservice,Store
+Email,emailservice,National
